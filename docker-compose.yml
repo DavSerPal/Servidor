@@ -4,12 +4,6 @@ services:
   web:
       image: php:7.4-apache
       ports:
-        - "8088:80"
-      volumes:
-        - ./PORTFOLIOAPP/src:/var/www/html
-  web2:
-      image: php:7.4-apache
-      ports:
-        - "8089:80"
+        - "81:80"
       volumes:
         - ./PORTFOLIOAPP/src:/var/www/html
